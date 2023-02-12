@@ -12,7 +12,7 @@
 
 <body>
     <div class="flex">
-        <div id="navbar" class="text-white font-thin bg-sky-500 w-72 h-screen flex flex-col justify-start items-start">
+        <div id="navbar" class="text-white font-thin bg-sky-500 h-auto flex flex-col justify-start items-start w-80">
             <div class="flex mb-10 p-3 w-full">
                 <img class="invert hover:translate-x-2" src="img/view_in_ar_FILL0_wght400_GRAD0_opsz48.svg">
                 <div class="flex justify-center items-center pl-3 text-3xl">Logoipsum</div>
@@ -57,9 +57,9 @@
             </div>
         </div>
         <div id="main" class="flex flex-col w-full">
-            <div id="user-section" class="bg-white h-48 flex-col justify-center items-center">
-                <div id="user-top-section" class="flex justify-between h-1/2">
-                    <div class="flex">
+            <div id="user-section" class="bg-white h-48 shadow-lg flex-col justify-center items-center p-4">
+                <div id="user-top-section" class="flex justify-between h-1/2 pb-5">
+                    <div class="flex justify-center items-center">
                         <div>
                             <button class="relative">
                                 <img class="scale-50" src="img/search_FILL0_wght400_GRAD0_opsz48.svg">
@@ -68,45 +68,175 @@
                         <div id="searchbar" class="flex flex-col">
                             <div class="flex">
                                 <div class="relative">
-                                    <input type="text"
-                                        class="w-64 p-2 bg-gray-200 rounded-full focus:outline-none focus:shadow-outline">
+                                    <input type="text" class="p-2 bg-gray-200 w-96 rounded-full focus:outline-none focus:shadow-outline">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center gap-3">
                         <img src="img/notifications_FILL0_wght400_GRAD0_opsz48.svg" class="scale-50">
                         <img src="img/Alja2755(1).jpg" class=" rounded-full w-9 h-9 object-cover">
-                        <p>Alja Čekada</p>
+                        <p class="text-lg">Alja Čekada</p>
                     </div>
                 </div>
                 <div id="user-bottom-section" class="flex justify-between items-center h-1/2">
-                    <div class="flex">
-                        <div><img src="img/Alja2755(1).jpg" class=" rounded-full w-16 h-16 object-cover"></div>
+                    <div class="flex gap-4 justify-center items-center">
+                        <div><img src="img/Alja2755(1).jpg" class="w-16 h-16 object-cover rounded-full"></div>
                         <div class="flex flex-col">
                             <div class="text-sm font">Hi there,</div>
                             <div class="text-2xl font">Alja Čekada (@alchuu00)</div>
                         </div>
                     </div>
-                    <div class="text-white font-extralight">
-                        <button class="bg-sky-500 rounded-3xl px-8 py-2">New</button>
-                        <button class="bg-sky-500 rounded-3xl px-8 py-2">Upload</button>
-                        <button class="bg-sky-500 rounded-3xl px-8 py-2">Share</button>
+                    <div class="flex text-white font-extralight gap-4">
+                        <button class="bg-sky-500 hover:bg-sky-400 rounded-3xl px-8 py-2">New</button>
+                        <button class="bg-sky-500 hover:bg-sky-400 rounded-3xl px-8 py-2">Upload</button>
+                        <button class="bg-sky-500 hover:bg-sky-400 rounded-3xl px-8 py-2">Share</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-sky-50 h-full">
-                <div> your projects
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="bg-sky-50 h-full p-5 grid grid-cols-7 grid-rows-6 grid-flow-row">
+                <div id="projects" class="w-full row-start-1 row-span-6 col-start-1 col-span-5">
+                    <div class="font-light mb-3"> your projects</div>
+                    <div class="w-full grid grid-cols-2 grid-rows-3 gap-5">
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card" class="bg-white w-80 h-48 shadow-lg flex rounded-xl">
+                            <div class="bg-yellow-500 h-full w-5 rounded-l-full"></div>
+                            <div class="m-5">
+                                <div class="font-bold">Super Cool Project</div>
+                                <div class="text-sm my-5 text-gray-700">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit. Repellat molestiae, delectus quos reiquia et dignissimos a ipsa?</div>
+                                <div class="flex justify-end">
+                                    <img class="scale-50" src="img/bookmark_add_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg">
+                                    <img class="scale-50" src="img/share_FILL0_wght400_GRAD0_opsz48.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div>announcments</div>
-                    <div>trending</div>
+                <div id="Announcements" class="row-start-1 row-span-3 col-start-6 col-span-2">
+                    <div class="font-light mb-3">Announcements</div>
+                    <div class="bg-white w-64 h-fit rounded-xl flex flex-col px-8 py-5 shadow-lg">
+                        <div>
+                            <div class="font-bold text-sm">Site Maintenance</div>
+                            <div class="text-xs text-gray-700">Lorem, ipsum dolor sit amet consecteture incidunt unde dese vero
+                                veritatis nostrum assumenda.</div>
+                            <hr class="mt-5">
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm mt-5">Site Maintenance</div>
+                            <div class="text-xs text-gray-700">Lorem, ipsum dolor sit amet consecteture incidunt unde dese vero
+                                veritatis nostrum assumenda.</div>
+                            <hr class="mt-5">
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm mt-5">Site Maintenance</div>
+                            <div class="text-xs text-gray-700">Lorem, ipsum dolor sit amet consecteture incidunt unde dese vero
+                                veritatis nostrum assumenda.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="trending" class="row-start-4 row-span-3 col-start-6 col-span-2">
+                    <div class="font-light mb-3 mt-5">Trending</div>
+                    <div class="bg-white w-64 h-56 rounded-xl text-sm shadow-lg">
+                        <div class="flex justify-center items-center p-3">
+                            <div>
+                                <img class="w-12 h-12 rounded-full filter grayscale mr-5" src="img/profile.png">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>@person</div>
+                                <div class="text-gray-400">World Peace Builder</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center p-3">
+                            <div>
+                                <img class="w-12 h-12 rounded-full filter grayscale mr-5" src="img/profile.png">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>@person</div>
+                                <div class="text-gray-400">World Peace Builder</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center p-3">
+                            <div>
+                                <img class="w-12 h-12 rounded-full filter grayscale mr-5" src="img/profile.png">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>@person</div>
+                                <div class="text-gray-400">World Peace Builder</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
